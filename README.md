@@ -10,3 +10,6 @@ What I call the tool files: point.h/cpp, matrix.h/cpp, quat.h/cpp.
 "matrix" is simply of class of matrix, wich need the point class to work. A number of classic function on matrix are defined, and also a function called act() wich simply take a object point to operate on it and return a point. Again, a matrix can be of any dimension, but is by default a 3D matrix.
 
 "quaternion" in the quat.h/cpp files is a class describing quaternions. It depends on the classes point and matrix to work. As quaternions are used to described rations in a 3D space, it can be defined via an angle and an axis of rotation. However, as the mathematical components are different than these values, a quaternion can also used with the actual components of the mathematical object. It can act one an object point, as previously, but also produce a matrix of rotation. A function normalize() is also defined to set the norm of the quaternion to one, as a rotation quaternion must be unitary.
+
+
+plot.py is a template of python programm to print some 3D figures using matplotlib.
