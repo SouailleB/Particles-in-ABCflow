@@ -11,5 +11,7 @@ What I call the tool files: point.h/cpp, matrix.h/cpp, quat.h/cpp.
 
 "quaternion" in the quat.h/cpp files is a class describing quaternions. It depends on the classes point and matrix to work. As quaternions are used to described rations in a 3D space, it can be defined via an angle and an axis of rotation. However, as the mathematical components are different than these values, a quaternion can also used with the actual components of the mathematical object. It can act one an object point, as previously, but also produce a matrix of rotation. A function normalize() is also defined to set the norm of the quaternion to one, as a rotation quaternion must be unitary.
 
+Then, there is the rigid_body structure, wich is only a set of the main parameters of the spheroid. In addition, there are two functions used to convert this structure to an array (and conversly), that is necessary to the differential equation solver.
+
 
 plot.py is a template of python programm to print some 3D figures using matplotlib.
