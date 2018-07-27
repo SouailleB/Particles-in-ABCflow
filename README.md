@@ -21,4 +21,6 @@ In our case, this function is defined in the model.cpp file, wich regroup all th
 
 Finally, the main.cpp handles the calculation aspect of the problem, and calls everything declared in the model.cpp, to run the simulation with the defined parameters. It is also here that the results are written on some files.
 
+To compile the code, I reused a makefile, I don't properly know how to do it. It must certainly be improved. To compile the code, you must have all your files in a single folder, and type "make". Once it is done, type "./run", and the output files will be created. 
+
 plot.py is a template of python programm to print some 3D figures using matplotlib, based on the format I used one the output files. It can be modified easily.
