@@ -1,17 +1,17 @@
-#PARTIE A MODIFIER : Liste des fichiers .cpp (et uniquement les .cpp) a compiler
+#PART THAT NEED TO BE MODIFIED: just type the name of the .cpp files after SOURCES=
 SOURCES= point.cpp matrix.cpp quat.cpp rigid_body.cpp ode.cpp ABCflow.cpp model.cpp main.cpp
-#FIN DE LA PARTIE A MODIFIER
+#END OF THE PART THAT NEED TO BE MODIFIED
 
-# Nom du compilateur
+# Name of the compiler
 CXX=g++
-# Arguments pour l'etape d'édition de liens : all warnings & c++11 standart
+# Arguments for the link edition step : all warnings & c++11 standart
 LDFLAGS=-std=c++11 -Wall -Wextra
-# Arguments pour l'etape de compilation : all warnings & c++11 standart
+# Arguments for the compilation step : all warnings & c++11 standart
 CPPFLAGS=-std=c++11 -Wall -Wextra -Wno-ignored-attributes
 # Librairies : none
 LDLIBS=
 
-# Liste des fichiers objet (*.o), générée automagiquement
+# List of the object fils (*.o), automaticaly generated
 OBJETS=$(subst .cpp,.o,$(SOURCES))
 
 all: build
